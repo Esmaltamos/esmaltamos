@@ -1,6 +1,6 @@
 {
+  "homepage": "https://ivanb.github.io/esmaltamos/",
   "name": "esmaltamos",
-  "homepage": "ivanbardon.github.io/esmaltamos",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,13 +8,18 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "deploy": "gh-pages -d dist",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.16",
     "gh-pages": "^6.3.0",
+    "lucide-react": "^0.548.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.5",
+    "simple-parallax-js": "^6.3.3",
+    "tailwindcss": "^4.1.16"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
@@ -25,6 +30,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",
     "globals": "^16.4.0",
+    "tailwindcss-animate": "^1.0.7",
     "vite": "^7.1.7"
   }
 }
