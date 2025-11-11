@@ -1,16 +1,16 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
 import WhyChooseUs from '../components/WhyChooseUs';
-import Trabajos from '../components/Trabajos';
 import CallToAction from '../components/CallToAction';
+import OurServicesSection from '../components/OurServicesSection';
 
 export default function Inicio() {
   return (
     <>
       <HeroSection />
       <WhyChooseUs />
+      <OurServicesSection />
       <CallToAction />
-      <Trabajos />
     </>
   );
 }

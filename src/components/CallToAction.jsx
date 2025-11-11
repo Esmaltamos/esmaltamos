@@ -7,7 +7,7 @@ const CallToAction = () => {
   const whatsappUrl = `https://wa.me/${phoneNumber.replace(/\+/g, '')}`;
 
   return (
-    <div className=" bg-white text-black dark:bg-black dark:text-white px-2">
+    <div className="bg-background text-foreground px-2 py-8">
       <h2 className='text-4xl text-center font-medium'>Contacta con Nosotros</h2>
       <p className="text-left mb-8 text-lg text-muted-foreground px-4 py-6">
         ¿Tienes alguna pregunta o quieres solicitar un presupuesto? Utiliza nuestros canales de contacto directo. Te responderemos en la mayor brevedad.
