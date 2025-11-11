@@ -5,13 +5,23 @@
     <link rel="icon" type="image/svg+xml" href="/esmaltamos/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Servicios</title>
-    <script type="module" crossorigin src="/esmaltamos/assets/servicios-DtiVDVmB.js"></script>
-    <link rel="modulepreload" crossorigin href="/esmaltamos/assets/Layout-BCOqDgkf.js">
-    <link rel="modulepreload" crossorigin href="/esmaltamos/assets/phone-CQlawhqm.js">
-    <link rel="modulepreload" crossorigin href="/esmaltamos/assets/CallToAction-BIUg7lhm.js">
-    <link rel="stylesheet" crossorigin href="/esmaltamos/assets/Layout-Dis68WoL.css">
+    <script>
+      (function(){
+        try{
+          var ls=localStorage.getItem('theme');
+          var mql=window.matchMedia('(prefers-color-scheme: dark)');
+          var isDark = ls ? ls === 'dark' : mql.matches;
+          document.documentElement.classList.toggle('dark', isDark);
+        }catch(e){}
+      })();
+    </script>
+    <script type="module" crossorigin src="/esmaltamos/assets/servicios-CrLZQ5MP.js"></script>
+    <link rel="modulepreload" crossorigin href="/esmaltamos/assets/Layout-BR2vv5be.js">
+    <link rel="modulepreload" crossorigin href="/esmaltamos/assets/phone-iiXjyYTc.js">
+    <link rel="modulepreload" crossorigin href="/esmaltamos/assets/CallToAction-BmhbZhcT.js">
+    <link rel="stylesheet" crossorigin href="/esmaltamos/assets/Layout--Sbv6zk5.css">
   </head>
-  <body  class="bg-white text-black dark:bg-black dark:text-white dark:border-white">
+  <body class="bg-background text-foreground">
     <div id="root"></div>
   </body>
 </html>
