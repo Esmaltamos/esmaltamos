@@ -9,6 +9,7 @@ export default function Inicio() {
     <>
       <HeroSection />
       <WhyChooseUs />
+      <CallToAction compact showIntro={false} />
       <OurServicesSection />
       <CallToAction />
     </>
