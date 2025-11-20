@@ -17,21 +17,21 @@ const CallToAction = ({ compact = false, showIntro = true }) => {
         </>
       )}
   <div className={`grid grid-cols-1 sm:grid-cols-3 ${compact ? 'gap-3 max-w-md' : 'gap-4 max-w-4xl'} mx-auto px-4`}>
-        <a href={`mailto:${email}`} className="flex items-center gap-4 p-4 border border-border rounded-md hover:bg-card transition-colors justify-center sm:justify-start">
+        <a id='clicmail' href={`mailto:${email}`} className="flex items-center gap-4 p-4 border border-border rounded-md hover:bg-card transition-colors justify-center sm:justify-start">
           <Mail className="w-6 h-6 text-primary" />
           <div className='text-left'>
             <p className="font-semibold">Email</p>
             <p className="text-muted-foreground hidden sm:block">{email}</p>
           </div>
         </a>
-        <a href={`tel:${phoneNumber}`} className="flex items-center gap-4 p-4 border border-border rounded-md hover:bg-card transition-colors justify-center sm:justify-start">
+        <a id='clictel' href={`tel:${phoneNumber}`} className="flex items-center gap-4 p-4 border border-border rounded-md hover:bg-card transition-colors justify-center sm:justify-start">
           <Phone className="w-6 h-6 text-primary" />
           <div className='text-left'>
             <p className="font-semibold">Teléfono</p>
             <p className="text-muted-foreground hidden sm:block">{phoneNumber}</p>
           </div>
         </a>
-        <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 border border-border rounded-md hover:bg-card transition-colors justify-center sm:justify-start">
+        <a id='clicwhats' href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 border border-border rounded-md hover:bg-card transition-colors justify-center sm:justify-start">
           <MessageCircle className="w-6 h-6 text-primary" />
           <div className='text-left'>
             <p className="font-semibold">WhatsApp</p>
